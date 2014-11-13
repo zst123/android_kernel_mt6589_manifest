@@ -3,29 +3,18 @@ Android_kernel_mt6589 Manifest
 
 A manifest for building kernel for MT6589 platform
 
-repo init -u https://github.com/Dr-Shadow/android_kernel_mt6589_manifest.git -b master
+repo init -u https://github.com/zst123/android_kernel_mt6589_manifest.git -b master
 
 Master branch can be replaced by some others :
-	master will set kernel to branch master		       -> 3.4.5 for Faea F2S
-	r819-release will set kernel to branch r819-release    -> 3.4.5 for Oppo R819
-	devel-upstream will set kernel to branch devel-release -> 3.4.67 for Faea F2S
-	r819-base will set kernel to branch r819-base
-		  will set toolchain to arm-androideabi-4.6    -> 3.4.5 for Oppo R819
-
-More info :
-	3.4.5 for MT6589 is not really a base 3.4.5 with cherry-picked commits
-		but a 3.4.0
-	3.4.67 is kernel with all changes on kernel/common from AOSP source
-		there is some issues actually with pmem/ion but it should boot
-	r819-base is kernel from oppo source and with small modifications on build
-		scripts
+	master will set kernel to branch master		       -> 3.4.5 for Zopo zp9xx
 
 Actual components grabbed from repos :
 	manifest
-	sabermod toolchain 4.8.3 (compiled with default options)
-	android_kernel_mt6589 source
+	Linaro 4.9.1 toolchain (default)
+	sabermod toolchain 4.8.3
+	android_kernel_mt6589 zopo source (by PaoloW8)
 	ramdisks (see README https://bitbucket.org/Dr-Shadow/ramdisk/src)
-	mtk-tools forked from https://github.com/bgcngm/mtk-tools
+	mtk-tools from https://github.com/bgcngm/mtk-tools
 
 Dependencies :
 	Java

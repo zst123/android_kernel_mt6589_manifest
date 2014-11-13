@@ -10,11 +10,12 @@
            sync-j="4"
            sync-c="true" />
 
-  <project path="manifest" name="Dr-Shadow/android_kernel_mt6589_manifest" />
-  <project path="kernel" name="Dr-Shadow/android_kernel_mt6589"  />
+  <project path="manifest" name="zst123/android_kernel_mt6589_manifest" />
+  <project path="kernel" name="PaoloW8/kernel_ZOPO"  />
   <project path="ramdisk" name="Dr-Shadow/ramdisk" remote="bb" />
   <project path="toolchain/arm-eabi-4.8" name="Dr-Shadow/arm-eabi-4.8" />
-  <project path="mtk-tools" name="Dr-Shadow/mtk-tools" />
+  <project path="/toolchain/arm-cortex_a9-linux-gnueabihf-linaro_4.9.1-2014.05" name="PaoloW8/toolchain" />
+  <project path="mtk-tools" name="bgcngm/mtk-tools" />
   <project path="scripts" name="Dr-Shadow/android_kernel_mt6589_scripts" />
 
 </manifest>
